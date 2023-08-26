@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>RavenBloom</title>
+		<meta name="description" content="Ravenbloom is your one-stop flower shop for beautiful bouquets, flower boxes, and gardening tools and kits. Whether you're looking for the perfect gift for a loved one or you want to brighten up your own space, we have everything you need to create a stunning floral display. Visit us today to explore our wide selection of flowers and gardening products." />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="author" href="humans.txt" />
+
+		<meta property="og:title" content="Ravenbloom - Your One-Stop Flower Shop" />
+		<meta property="og:description" content="At Ravenbloom, we offer a wide selection of beautiful flowers, including bouquets, flower boxes, and gardening tools and kits. Whether you're looking for the perfect gift for a loved one or you want to brighten up your own space, we have everything you need to create a stunning floral display." />
+		<meta property="og:image" content="https://example.com/path/to/image.jpg" />
+		<meta property="og:url" content="https://ravenbloom.com" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Ravenbloom" />
+
+		<link rel="stylesheet" href="./style/style.css">
+		<link rel="stylesheet" href="./style/login.css">
+	</head>
+	<body>
+
+		<!--?                                                Navbar                                   -->
+		<nav class="">
+			<div class="nav-child nav-mid"> RavenBloom </div>
+		</nav>
+		<!-- Sidebar for mobile screen-->
+		<div class="nav-sidebar">
+			<a onclick="">
+				<span onclick="sidebarDropActivator(this)"> Shop &#9662; </span>
+				<ul class="sidebar-dropdown">
+					<li onclick=" window.location.assign('/flower.html')">Flowers</li>
+					<li onclick=" window.location.assign('/tools.html')">Gardening tools & kits</li>
+				</ul>
+			</a>
+			<a>
+				<span onclick="sidebarDropActivator(this)"> Policy &#9662; </span>
+				<ul class="sidebar-dropdown">
+					<li onclick=" window.location.assign('/TnC.html')">Terms & conditions</li>
+					<li onclick=" window.location.assign('/privacyPolicy.html')">Privacy policy</li>
+					<li onclick=" window.location.assign('/returnPolicy.html')">Return policy</li>
+					<li onclick=" window.location.assign('/faq.html')">FAQ</li>
+					<li onclick=" window.location.assign('/aboutUs.html')">About us</li>
+					<li onclick=" window.location.assign('/contact.html')">Contact us</li>
+				</ul>
+			</a>
+			<a onclick="window.location.assign('/profile.html')"> Profile </a>
+			<a onclick="window.location.assign('/cart.html')"> Cart </a>
+		</div>
+		<!--?                                                Main content                                   -->
+		<!-- Not wasting time to validate cuz im not backend developer -->
+		<div class="login-body">
+			<div class="login-container">
+				<form action="#">
+					<h2> Login here </h2>
+					<span class="space"></span>
+					<div class="input-container">
+						<label for="email">Email-Address</label>
+						<input id="email" type="email" placeholder="example@email.com">
+						<label for="pass">Password</label>
+						<input id="pass" type="password" placeholder="abcd1234****">
+						<div class="button-container">
+							<button onclick="event.preventDefault(); window.location.assign('/index.html')"> Log in </button>
+							<button onclick="event.preventDefault(); window.location.assign('/register.html')"> Create account </button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script src="js/user.js" type="module"></script>
+	</body>
+</html>

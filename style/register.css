@@ -1,0 +1,116 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Norican&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+body {
+  background: url("/assets/registerBg.jpg");
+  background-size: cover;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.regi-body {
+  height: 100vh;
+  width: 60%;
+  margin: 0 auto;
+  margin-left: 360px;
+}
+.regi-body .regi-container {
+  padding-top: 4%;
+}
+
+form {
+  color: #191919;
+}
+form h2 {
+  font-weight: normal;
+  text-align: center;
+  font-size: 34px;
+  padding-top: 48px;
+}
+form .input-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+form .input-container .inp {
+  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+form .input-container .inp label {
+  font-size: 18px;
+}
+form .input-container .inp input {
+  display: block;
+  padding-left: 2%;
+  width: 100%;
+}
+form .input-container .inp > * {
+  margin-top: 24px;
+}
+form .button-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-top: 50px;
+  width: 100%;
+  padding-left: 12px;
+}
+form .button-container button {
+  background-color: #7286d3;
+  color: #f6f6f6;
+  padding: 18px 74px;
+}
+
+@media screen and (max-width: 1000px) {
+  .regi-body {
+    height: auto;
+    width: 100vw;
+    margin: 0 auto;
+    margin-left: 0;
+  }
+  .regi-body .regi-container {
+    padding-top: 0;
+  }
+  form h2 {
+    padding-top: 24px;
+  }
+  form .input-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  form .input-container .inp {
+    width: 60%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  form .input-container .inp:last-of-type {
+    margin-top: 64px;
+  }
+  form .input-container .inp input {
+    display: block;
+    padding-left: 2%;
+    width: 100%;
+  }
+  form .button-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    margin: 48px auto;
+  }
+  form .button-container button {
+    padding: 18px 48px;
+  }
+}/*# sourceMappingURL=register.css.map */

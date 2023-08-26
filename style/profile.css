@@ -1,0 +1,57 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Norican&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+body {
+  background-image: url("/assets/profileBg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+main .metabody {
+  height: 90%;
+  width: 80%;
+  border-radius: 20px;
+  color: #191919;
+  background: rgba(237, 241, 214, 0.22);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.4px);
+  -webkit-backdrop-filter: blur(2.4px);
+  border: 1px solid rgba(237, 241, 214, 0.3);
+}
+main .metabody::after {
+  content: "RavenBloom";
+  font-family: "Norican", cursive;
+  color: #7286d3;
+  position: absolute;
+  padding: 6px 18px;
+  bottom: 0;
+  right: 0;
+}
+
+.metabody {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.metabody .header {
+  font-size: 32px;
+  font-weight: normal;
+  margin: 0;
+  padding-left: 32px;
+}
+.metabody .info {
+  font-size: 22px;
+  margin: 0;
+  margin-left: 32px;
+}/*# sourceMappingURL=profile.css.map */

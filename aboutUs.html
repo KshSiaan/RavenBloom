@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>RavenBloom</title>
+		<meta name="description" content="Ravenbloom is your one-stop flower shop for beautiful bouquets, flower boxes, and gardening tools and kits. Whether you're looking for the perfect gift for a loved one or you want to brighten up your own space, we have everything you need to create a stunning floral display. Visit us today to explore our wide selection of flowers and gardening products." />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+			<!--? For authority -->
+		<link rel="author" href="/readme/human.txt" />
+			<!--? Dummy open graph :p -->
+		<meta property="og:title" content="Ravenbloom - Your One-Stop Flower Shop" />
+		<meta property="og:description" content="At Ravenbloom, we offer a wide selection of beautiful flowers, including bouquets, flower boxes, and gardening tools and kits. Whether you're looking for the perfect gift for a loved one or you want to brighten up your own space, we have everything you need to create a stunning floral display." />
+		<meta property="og:image" content="https://example.com/path/to/image.jpg" />
+		<meta property="og:url" content="https://ravenbloom.com" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Ravenbloom" />
+		
+		<link rel="stylesheet" href="./style/style.css">
+		<link rel="stylesheet" href="./style/privacy.css">
+	</head>
+	<body>
+		<!--?    	                                           Navbar                                   -->
+		<nav class="">
+			<div class="nav-child nav-left">
+				<a href="#" class="drop-parent" onclick=" window.location.assign('/flower.html')"> Shop <ul class="drop">
+						<li onclick=" window.location.assign('/flower.html')">Flowers</li>
+						<li onclick=" window.location.assign('/tools.html')">Gardening tools & kits</li>
+					</ul>
+				</a>
+				<a href="#" class="drop-parent"> Policy <ul class="drop">
+						<li onclick=" window.location.assign('/TnC.html')">Terms & conditions</li>
+						<li onclick=" window.location.assign('/privacyPolicy.html')">Privacy policy</li>
+						<li onclick=" window.location.assign('/returnPolicy.html')">Return policy</li>
+						<li onclick=" window.location.assign('/faq.html')">FAQ</li>
+						<li onclick=" window.location.assign('/aboutUs.html')">About us</li>
+						<li onclick=" window.location.assign('/contact.html')">Contact us</li>
+					</ul>
+				</a>
+			</div>
+			<div class="nav-child nav-mid" onclick="window.location.assign('/index.html')"> RavenBloom </div>
+			<div class="nav-child nav-right">
+				<a href="#" onclick=" window.location.assign('/profile.html')"> Profile </a>
+				<a href="#" onclick=" window.location.assign('/cart.html')"> Cart </a>
+				<div class="menu">
+					<i class="bi bi-list"></i>
+				</div>
+			</div>
+		</nav>
+
+		<!--? menu for mobile screen-->
+
+		<div class="nav-sidebar">
+			<a onclick="">
+				<span onclick="sidebarDropActivator(this)"> Shop &#9662; </span>
+				<ul class="sidebar-dropdown">
+					<li onclick=" window.location.assign('/flower.html')">Flowers</li>
+					<li onclick=" window.location.assign('/tools.html')">Gardening tools & kits</li>
+				</ul>
+			</a>
+			<a>
+				<span onclick="sidebarDropActivator(this)"> Policy &#9662; </span>
+				<ul class="sidebar-dropdown">
+					<li onclick=" window.location.assign('/TnC.html')">Terms & conditions</li>
+					<li onclick=" window.location.assign('/privacyPolicy.html')">Privacy policy</li>
+					<li onclick=" window.location.assign('/returnPolicy.html')">Return policy</li>
+					<li onclick=" window.location.assign('/faq.html')">FAQ</li>
+					<li onclick=" window.location.assign('/aboutUs.html')">About us</li>
+					<li onclick=" window.location.assign('/contact.html')">Contact us</li>
+				</ul>
+			</a>
+			<a onclick="window.location.assign('/profile.html')"> Profile </a>
+			<a onclick="window.location.assign('/cart.html')"> Cart </a>
+		</div>
+		<!--?                                                   Main content                                   -->
+		<main class="metabody">
+			<h2>About us</h2>
+			<div class="content-container">
+				<h3 class="content-header"> Making someone's day has never been easier. <br> Happiness Guaranteed. </h3>
+				<p class="content-body"> Welcome to Ravenbloom, where we believe that a beautiful bouquet of flowers can brighten anyone's day. We're passionate about delivering the perfect flower delivery experience to our customers, whether you're looking to surprise a loved one or simply brighten up your own home or workspace. <br>
+					<br> Our mission is simple: to offer the freshest, most beautiful flowers and plants, paired with exceptional customer service and convenient delivery options. We believe that ordering flowers online should be a stress-free and enjoyable experience, and we work hard to make sure our customers feel confident and delighted every step of the way. <br>
+					<br> Our team of expert florists curates a selection of stunning bouquets and indoor plants, sourced directly from our partnering growers to ensure the highest quality and freshness. From classic roses and lilies to exotic tropical blooms and trendy succulents, our collection offers something for every taste and occasion. <br>
+					<br> We understand that every flower delivery is a special moment, and we take our responsibility to make it perfect very seriously. Our effortless ordering process and convenient delivery options mean you can order with confidence, knowing that your flowers will arrive on time and in pristine condition. <br>
+					<br> We stand behind our 100% happiness guarantee, and we're committed to making sure that every customer is delighted with their Ravenbloom experience. If for any reason you or your recipient are not satisfied, we'll work with you to make it right. <br>
+					<br> Thank you for choosing Ravenbloom. We're honored to be a part of your most precious moments, and we look forward to helping you brighten up your world with beautiful blooms.
+				</p>
+			</div>
+			<div class="interacter">
+				<button onclick="window.history.go(-1)"> Return </button>
+			</div>
+		</main>
+		<!-- ?                                                    Scripts                                        -->
+		<script src="js/main.js"></script>
+		<script src="js/user.js" type="module"></script>
+	</body>
+</html>

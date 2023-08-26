@@ -1,0 +1,380 @@
+@import "pack";
+
+//Pre-fixer
+
+//Pre-classified components
+
+//Styles
+
+//?                                                    Header styles
+header {
+  height: 100vh;
+  width: 100vw;
+  background-color: $secondary;
+  display: flex;
+
+  .header-container {
+    height: 100%;
+    width: 50%;
+    padding-left: 124px;
+
+    @include flexerAlign(column, center, flex-start);
+
+    //left side
+    h1 {
+      font-size: 52px;
+      color: $dark;
+      font-weight: normal;
+    }
+    a {
+      color: $light;
+      font-size: 48px;
+      text-transform: uppercase;
+    }
+
+    //right side
+    .space2 {
+      height: 48px;
+    }
+
+    h3 {
+      font-size: 34px;
+      font-weight: normal;
+      color: $dark;
+    }
+
+    input {
+      width: 90%;
+      padding: 12px 10px;
+    }
+    ::placeholder {
+      color: $dark;
+    }
+    .button-container {
+      padding-top: 24px;
+      width: 94%;
+      @include flexerAlign(column, space-around, flex-end);
+
+      button {
+        background-color: $dark;
+        color: $light;
+        width: 184px;
+      }
+    }
+  }
+}
+
+//?                                              Styles for main content
+
+.topic-title {
+  height: 94px;
+  width: 100%;
+  color: $dark;
+
+  font-size: 42px;
+  font-weight: normal;
+  text-align: center;
+
+  @include flexer(row, center);
+}
+
+main {
+  //? Favourite flower section:
+
+  .fav-container {
+    display: block;
+    height: 340px;
+    width: 90%;
+    margin: 0 auto;
+
+    @include flexer(row, space-around);
+
+    .fav-card {
+      width: calc(100%/6.5);
+      height: 100%;
+
+      img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+      }
+      .fav-name {
+        height: 70px;
+        width: 100%;
+        @include flexer(row, center);
+        font-size: 22px;
+      }
+    }
+  }
+
+  //? Sale section:
+
+  .sale-container {
+    display: block;
+    padding: 24px 0;
+    width: 100vw;
+    height: auto;
+
+    @include flexer(column, space-around);
+
+    .sale-card {
+      height: 240px;
+      width: 60%;
+      background-color: $secondary;
+      margin: 42px 0;
+      border-radius: 10px;
+      position: relative;
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      box-shadow: 0px 0px 2.5px #00000050;
+
+      //The wrapper
+      &::after {
+        content: "";
+        height: 180px;
+        width: 180px;
+        background-color: $primary;
+
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 3;
+
+        -webkit-clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 100%);
+        clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 100%);
+      }
+    }
+  }
+
+  .extra-container {
+    width: 60%;
+    height: auto;
+
+    display: block;
+    margin: 0 auto;
+
+    font-size: 18px;
+    color: $dark;
+
+    li {
+      padding: 32px 0;
+    }
+  }
+}
+
+//?                                               Footer styles
+
+footer {
+  height: 400px;
+  width: 100vw;
+  background-color: $primary;
+
+  .top-footer {
+    height: 350px;
+    width: 100%;
+    @include flexer(row, space-around);
+
+    ul {
+      height: 100%;
+      width: calc(100% / 4);
+      list-style: none;
+      color: $light;
+      margin: 0;
+      padding: 0;
+
+      @include flexerAlign(column, space-around, flex-start);
+
+      li {
+        h4 {
+          font-size: 18px;
+          padding: 0;
+          margin: 0;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .bottom-footer {
+    height: 50px;
+    width: 100%;
+    background-color: $dark;
+    color: $primary;
+
+    @include flexer(row, center);
+  }
+}
+
+//*                                                 Mobile view
+
+@media screen and (max-width: 854px) {
+  header {
+    height: 100vh;
+    width: 100vw;
+    background-color: $secondary;
+    @include flexer(column, space-around);
+    margin-top: 64px;
+
+    .header-container {
+      height: 50%;
+      width: 90%;
+      padding: 0;
+      margin: 0 auto;
+
+      @include flexerAlign(column, center, center);
+
+      //left side
+      h1 {
+        font-size: 38px;
+        font-weight: normal;
+        text-align: center;
+        width: 100%;
+      }
+      a {
+        font-size: 28px;
+      }
+
+      h3 {
+        font-size: 22px;
+      }
+    }
+  }
+
+  //?                                              Styles for main content
+
+  .topic-title {
+    font-size: 32px;
+  }
+
+  main {
+    //? Favourite flower section:
+
+    .fav-container {
+      display: block;
+      height: 90vh;
+      width: 100%;
+
+      @include flexer(row, space-around);
+
+      .fav-card {
+        width: 33%;
+        height: auto;
+
+        img {
+          height: 200px;
+          width: 100%;
+          object-fit: cover;
+        }
+        .fav-name {
+          height: 70px;
+          width: 100%;
+          @include flexer(row, center);
+          font-size: 22px;
+        }
+      }
+    }
+
+    //? Sale section:
+
+    .sale-container {
+      .sale-card {
+        width: 100%;
+        border-radius: 0;
+
+        //The wrapper
+        &::after {
+          height: 90px;
+          width: 90px;
+        }
+      }
+    }
+  }
+
+  //?                                               Footer styles
+
+  footer {
+    .top-footer {
+      ul {
+        li {
+          word-break: break-all;
+          font-size: 14px;
+          h4 {
+            font-size: 16px;
+            padding: 0;
+            margin: 0;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+    .bottom-footer {
+      height: 50px;
+      width: 100%;
+      background-color: $dark;
+      color: $primary;
+
+      @include flexer(row, center);
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    .header-container {
+      //left side
+      h1 {
+        font-size: 28px;
+      }
+      a {
+        font-size: 24px;
+      }
+
+      h3 {
+        font-size: 22px;
+      }
+    }
+  }
+
+  //?                                              Styles for main content
+
+  .topic-title {
+    font-size: 22px;
+  }
+
+  .fav-name {
+    font-size: 16px;
+  }
+  //? Sale section:
+
+  main {
+    .extra-container {
+      width: 90%;
+
+      font-size: 14px;
+
+      li {
+        padding: 32px 0;
+      }
+    }
+  }
+  //?                                               Footer styles
+
+  footer {
+    .top-footer {
+      ul {
+        li {
+          font-size: 8px;
+          h4 {
+            font-size: 12px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .bottom-footer {
+      font-size: 10px;
+    }
+  }
+}

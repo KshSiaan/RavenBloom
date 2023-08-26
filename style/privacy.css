@@ -1,0 +1,114 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Norican&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+.metabody {
+  width: 100vw;
+  height: auto;
+}
+.metabody h2 {
+  font-size: 48px;
+  font-weight: normal;
+  color: #191919;
+  margin: 0;
+  padding: 48px 98px;
+}
+.metabody .content-container {
+  height: auto;
+  width: 100%;
+  padding: 0 12%;
+}
+.metabody .content-container .content-header {
+  font-size: 34px;
+  font-weight: normal;
+  color: #191919;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 34px;
+}
+.metabody .content-container .content-body {
+  width: 80%;
+  font-size: 24px;
+  color: #191919;
+}
+.metabody .interacter {
+  height: 80px;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.metabody .interacter button {
+  background-color: #7286d3;
+  color: #f6f6f6;
+  padding: 18px 42px;
+}
+.metabody .massage-interacter {
+  height: 600px;
+  width: 76%;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+  color: #191919;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.metabody .massage-interacter .button-group {
+  height: 74px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.metabody .massage-interacter .button-group button {
+  background-color: #7286d3;
+  color: #f6f6f6;
+}
+
+@media screen and (max-width: 854px) {
+  .metabody h2 {
+    font-size: 32px;
+    padding: 48px 16%;
+  }
+  .metabody .content-container {
+    width: 100%;
+    padding: 0 12%;
+  }
+  .metabody .content-container .content-header {
+    font-size: 26px;
+    width: 80%;
+  }
+  .metabody .content-container .content-body {
+    width: 80%;
+    font-size: 20px;
+  }
+  .metabody .massage-interacter {
+    height: 600px;
+    width: 76%;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: bold;
+    color: #191919;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .metabody .massage-interacter .button-group {
+    height: 74px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .metabody .massage-interacter .button-group button {
+    background-color: #7286d3;
+    color: #f6f6f6;
+  }
+}/*# sourceMappingURL=privacy.css.map */

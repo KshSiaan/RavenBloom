@@ -1,0 +1,177 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Norican&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+main {
+  width: 80vw;
+  height: auto;
+  margin: 0 auto;
+}
+main .checkout-form {
+  display: block;
+  position: relative;
+  margin: 34px auto;
+  height: 80vh;
+  width: 100%;
+  border-radius: 15px;
+  background: #f6f6f6;
+  box-shadow: 6px 6px 12px #d1d1d1, -6px -6px 12px #ffffff;
+  color: #191919;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+main .checkout-form .recheck {
+  width: 18%;
+  height: 100%;
+  overflow-y: auto;
+  font-size: 18px;
+  border-right: dashed 2px #7286d3;
+}
+main .checkout-form .recheck p {
+  display: block;
+  padding: 8px 18px;
+}
+main .checkout-form .payment {
+  width: 80%;
+  height: 100%;
+}
+main .checkout-form .payment h2 {
+  height: 20%;
+  margin: 0;
+  padding: 0 48px;
+  font-size: 32px;
+  font-weight: normal;
+  color: #7286d3;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .checkout-form .payment form {
+  height: 80%;
+  width: 100%;
+}
+main .checkout-form .payment form .payment-subs {
+  height: 80%;
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+main .checkout-form .payment form .payment-subs div {
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+main .checkout-form .payment form .payment-subs div input, main .checkout-form .payment form .payment-subs div label {
+  color: #191919;
+  font-size: 18px;
+  display: block;
+  margin: 0 24px;
+}
+main .checkout-form .payment form .payment-subs div label {
+  font-weight: bold;
+}
+main .checkout-form .payment form .payment-subs .payment-sub-A {
+  height: 100%;
+}
+main .checkout-form .payment form .payment-subs .payment-sub-B {
+  height: 24%;
+}
+main .checkout-form .payment form .payment-subs .payment-sub-B select {
+  width: 300px;
+  text-align: center;
+}
+main .checkout-form .payment form .interacter {
+  height: 20%;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+main .checkout-form .payment form .interacter button {
+  background-color: #7286d3;
+  color: #f6f6f6;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    width: 100vw;
+  }
+  main .checkout-form {
+    height: 100vh;
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+  main .checkout-form::after {
+    display: none;
+  }
+  main .checkout-form .recheck {
+    width: 18%;
+    display: none;
+  }
+  main .checkout-form .payment {
+    width: 80%;
+    margin: 0 auto;
+  }
+  main .checkout-form .payment h2 {
+    padding: 5px 32px;
+    font-size: 28px;
+    width: 100%;
+    text-align: center;
+  }
+  main .checkout-form .payment form .payment-subs {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  main .checkout-form .payment form .payment-subs div {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  main .checkout-form .payment form .payment-subs div input, main .checkout-form .payment form .payment-subs div label {
+    color: #191919;
+    font-size: 14px;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+  }
+  main .checkout-form .payment form .payment-subs div label {
+    font-weight: bold;
+  }
+  main .checkout-form .payment form .payment-subs .payment-sub-A {
+    height: 60%;
+  }
+  main .checkout-form .payment form .payment-subs .payment-sub-B {
+    height: 40%;
+  }
+  main .checkout-form .payment form .payment-subs .payment-sub-B select {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  main .checkout-form .payment form .interacter {
+    height: 20%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}/*# sourceMappingURL=checkout.css.map */

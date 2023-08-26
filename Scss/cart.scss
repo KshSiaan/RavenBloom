@@ -1,0 +1,172 @@
+@import "pack";
+
+//Pre-fixer
+
+//Pre-classified components
+
+//Styles
+main {
+  // Positioning and display
+  width: 80vw;
+  height: auto;
+  margin: 0 auto;
+
+  .header {
+    // Dimensions
+    height: 64px;
+    width: 100%;
+
+    // Coloring
+    background-color: $primary;
+    color: $light;
+    font-size: 24px;
+
+    // Mixin includes
+    @include flexer(row, space-around);
+  }
+
+  .items {
+    // Dimensions
+    height: 500px;
+    width: 100%;
+
+    // Other
+    list-style: lower-roman;
+  }
+
+  .cart-body {
+    // Dimensions
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+
+    // Coloring
+    background-color: inherit;
+    color: $dark;
+    font-size: 18px;
+    padding: 24px 0;
+
+    // Mixin includes
+    @include flexerAlign(row, space-around, flex-start);
+
+    div {
+      // Other
+      padding-bottom: 24px;
+    }
+  }
+
+  .total {
+    // Mixin includes
+    @extend .cart-body;
+
+    // Dimensions
+    min-height: auto;
+    height: 64px;
+
+    // Coloring
+    border-top: solid 1.5px $dark;
+  }
+
+  .interacter {
+    // Dimensions
+    height: 64px;
+    width: 100%;
+
+    // Mixin includes
+    @include flexer(row, space-between);
+
+    button {
+      // Coloring
+      background-color: $primary;
+      color: $light;
+    }
+  }
+
+  .reverse {
+    // Mixin includes
+    @include flexer(row, flex-end);
+  }
+}
+
+//extra
+.note {
+  // Positioning and display
+  display: block;
+  width: 100%;
+
+  // Other
+  font-size: 18px;
+  padding: 24px 0;
+  color: $dark;
+}
+
+
+//Mobile screen
+
+@media screen and (max-width: 854px) {
+  main {
+    width: 95vw;
+    height: auto;
+    margin: 0 auto;
+
+    .header {
+      height: 64px;
+      width: 100%;
+      background-color: $primary;
+      color: $light;
+      font-size: 20px;
+
+      @include flexer(row, space-around);
+    }
+
+    .items {
+      height: 500px;
+      width: 100%;
+      list-style: lower-roman;
+    }
+
+    .cart-body {
+      width: 100%;
+      min-height: 200px;
+      background-color: inherit;
+      color: $dark;
+      font-size: 18px;
+      padding: 24px 0;
+
+      @include flexerAlign(row, space-around, flex-start);
+
+      div {
+        padding-bottom: 24px;
+      }
+    }
+    .total {
+      @extend .cart-body;
+      min-height: auto;
+      height: 64px;
+      border-top: solid 1.5px $dark;
+    }
+
+    .interacter {
+      height: 64px;
+      width: 100%;
+      @include flexer(row, space-between);
+
+      button {
+        background-color: $primary;
+        color: $light;
+      }
+    }
+    .reverse {
+      @include flexer(row, flex-end);
+    }
+  }
+
+  //extra
+  .note {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding: 24px 0;
+    color: $dark;
+  }
+}

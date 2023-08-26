@@ -1,0 +1,140 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Norican&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+main {
+  width: 80vw;
+  height: auto;
+  margin: 0 auto;
+}
+main .header {
+  height: 64px;
+  width: 100%;
+  background-color: #7286d3;
+  color: #f6f6f6;
+  font-size: 24px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+main .items {
+  height: 500px;
+  width: 100%;
+  list-style: lower-roman;
+}
+main .cart-body, main .total {
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+  background-color: inherit;
+  color: #191919;
+  font-size: 18px;
+  padding: 24px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+main .cart-body div, main .total div {
+  padding-bottom: 24px;
+}
+main .total {
+  min-height: auto;
+  height: 64px;
+  border-top: solid 1.5px #191919;
+}
+main .interacter {
+  height: 64px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+main .interacter button {
+  background-color: #7286d3;
+  color: #f6f6f6;
+}
+main .reverse {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.note {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  padding: 24px 0;
+  color: #191919;
+}
+
+@media screen and (max-width: 854px) {
+  main {
+    width: 95vw;
+    height: auto;
+    margin: 0 auto;
+  }
+  main .header {
+    height: 64px;
+    width: 100%;
+    background-color: #7286d3;
+    color: #f6f6f6;
+    font-size: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  main .items {
+    height: 500px;
+    width: 100%;
+    list-style: lower-roman;
+  }
+  main .cart-body, main .total {
+    width: 100%;
+    min-height: 200px;
+    background-color: inherit;
+    color: #191919;
+    font-size: 18px;
+    padding: 24px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  main .cart-body div, main .total div {
+    padding-bottom: 24px;
+  }
+  main .total {
+    min-height: auto;
+    height: 64px;
+    border-top: solid 1.5px #191919;
+  }
+  main .interacter {
+    height: 64px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .interacter button {
+    background-color: #7286d3;
+    color: #f6f6f6;
+  }
+  main .reverse {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .note {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding: 24px 0;
+    color: #191919;
+  }
+}/*# sourceMappingURL=cart.css.map */

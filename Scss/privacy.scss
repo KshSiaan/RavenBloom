@@ -1,0 +1,123 @@
+@import "pack";
+
+//Pre-fixer
+
+//Pre-classified components
+
+//Styles
+
+.metabody {
+  width: 100vw;
+  height: auto;
+
+  h2 {
+    font-size: 48px;
+    font-weight: normal;
+    color: $dark;
+    margin: 0;
+    padding: 48px 98px;
+  }
+
+  .content-container {
+    height: auto;
+    width: 100%;
+    padding: 0 12%;
+
+    .content-header {
+      font-size: 34px;
+      font-weight: normal;
+      color: $dark;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 34px;
+    }
+
+    .content-body {
+      width: 80%;
+      font-size: 24px;
+      color: $dark;
+    }
+  }
+
+  .interacter {
+    height: 80px;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    @include flexer(row, flex-end);
+
+    button {
+      background-color: $primary;
+      color: $light;
+      padding: 18px 42px;
+    }
+  }
+
+  .massage-interacter {
+    height: 600px;
+    width: 76%;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: bold;
+    color: $dark;
+
+    @include flexerAlign(column, space-around, flex-start);
+
+    .button-group {
+      height: 74px;
+      width: 100%;
+      @include flexer(row, space-between);
+
+      button {
+        background-color: $primary;
+        color: $light;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 854px) {
+  .metabody {
+    h2 {
+      font-size: 32px;
+      padding: 48px 16%;
+    }
+
+    .content-container {
+      width: 100%;
+      padding: 0 12%;
+
+      .content-header {
+        font-size: 26px;
+        width: 80%;
+      }
+
+      .content-body {
+        width: 80%;
+        font-size: 20px;
+      }
+    }
+
+    .massage-interacter {
+      height: 600px;
+      width: 76%;
+      margin: 0 auto;
+      font-size: 18px;
+      font-weight: bold;
+      color: $dark;
+
+      @include flexerAlign(column, space-around, flex-start);
+
+      .button-group {
+        height: 74px;
+        width: 100%;
+        @include flexer(row, space-between);
+
+        button {
+          background-color: $primary;
+          color: $light;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>RavenBloom</title>
+  <meta name="description" content="Ravenbloom is your one-stop flower shop for beautiful bouquets, flower boxes, and gardening tools and kits. Whether you're looking for the perfect gift for a loved one or you want to brighten up your own space, we have everything you need to create a stunning floral display. Visit us today to explore our wide selection of flowers and gardening products." />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- For authority -->
+
+  <link rel="author" href="humans.txt" />
+
+  <!-- Dummy open graph :p -->
+  
+  <meta property="og:title" content="Ravenbloom - Your One-Stop Flower Shop" />
+  <meta property="og:description" content="At Ravenbloom, we offer a wide selection of beautiful flowers, including bouquets, flower boxes, and gardening tools and kits. Whether you're looking for the perfect gift for a loved one or you want to brighten up your own space, we have everything you need to create a stunning floral display." />
+  <meta property="og:image" content="https://example.com/path/to/image.jpg" />
+  <meta property="og:url" content="https://ravenbloom.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ravenbloom" />
+
+  <!-- CSS and externals -->
+
+  <link rel="stylesheet" href="./style/style.css">
+
+</head>
+
+<body>
+<!-- Lets start coding -->
+    <!--?                                                Navbar                                   -->
+<nav class="absolute">
+  <div class="nav-child nav-left">
+
+        <a href="#" class="drop-parent">
+          Shop
+
+          <ul class="drop">
+            <li>Flowers</li>
+            <li>Gardening tools & kits</li>
+          </ul>
+        </a>
+
+        <a href="#" class="drop-parent">
+          Policy
+
+          <ul class="drop">
+            <li>Terms & conditions</li>
+            <li>Privacy policy</li>
+            <li>Return policy</li>
+          </ul>
+        </a>
+
+  </div>
+
+  <div class="nav-child nav-mid">
+    RavenBloom
+  </div>
+
+  <div class="nav-child nav-right">
+    
+        <a href="#">
+          Profile
+        </a>
+
+        <a href="#">
+          Cart
+        </a>
+
+        
+
+  </div>
+</nav>
+
+
+
+<!--?                                                   Main content                                   -->
+
+
+
+
+
+<!-- ?                                                    Scripts                                        -->
+  <script src="js/main.js"></script>
+  <script src="js/user.js"></script>
+
+</body>
+
+</html>

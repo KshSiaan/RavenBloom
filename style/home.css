@@ -1,0 +1,312 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Norican&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+header {
+  height: 100vh;
+  width: 100vw;
+  background-color: #8ea7e9;
+  display: flex;
+}
+header .header-container {
+  height: 100%;
+  width: 50%;
+  padding-left: 124px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+header .header-container h1 {
+  font-size: 52px;
+  color: #191919;
+  font-weight: normal;
+}
+header .header-container a {
+  color: #f6f6f6;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+header .header-container .space2 {
+  height: 48px;
+}
+header .header-container h3 {
+  font-size: 34px;
+  font-weight: normal;
+  color: #191919;
+}
+header .header-container input {
+  width: 90%;
+  padding: 12px 10px;
+}
+header .header-container ::placeholder {
+  color: #191919;
+}
+header .header-container .button-container {
+  padding-top: 24px;
+  width: 94%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+header .header-container .button-container button {
+  background-color: #191919;
+  color: #f6f6f6;
+  width: 184px;
+}
+
+.topic-title {
+  height: 94px;
+  width: 100%;
+  color: #191919;
+  font-size: 42px;
+  font-weight: normal;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+main .fav-container {
+  display: block;
+  height: 340px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+main .fav-container .fav-card {
+  width: 15.3846153846%;
+  height: 100%;
+}
+main .fav-container .fav-card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+main .fav-container .fav-card .fav-name {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+main .sale-container {
+  display: block;
+  padding: 24px 0;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+main .sale-container .sale-card {
+  height: 240px;
+  width: 60%;
+  background-color: #8ea7e9;
+  margin: 42px 0;
+  border-radius: 10px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 2.5px rgba(0, 0, 0, 0.3137254902);
+}
+main .sale-container .sale-card::after {
+  content: "";
+  height: 180px;
+  width: 180px;
+  background-color: #7286d3;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  -webkit-clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 100%);
+  clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0 100%);
+}
+main .extra-container {
+  width: 60%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #191919;
+}
+main .extra-container li {
+  padding: 32px 0;
+}
+
+footer {
+  height: 400px;
+  width: 100vw;
+  background-color: #7286d3;
+}
+footer .top-footer {
+  height: 350px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .top-footer ul {
+  height: 100%;
+  width: 25%;
+  list-style: none;
+  color: #f6f6f6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+footer .top-footer ul li h4 {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+footer .bottom-footer {
+  height: 50px;
+  width: 100%;
+  background-color: #191919;
+  color: #7286d3;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 854px) {
+  header {
+    height: 100vh;
+    width: 100vw;
+    background-color: #8ea7e9;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 64px;
+  }
+  header .header-container {
+    height: 50%;
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  header .header-container h1 {
+    font-size: 38px;
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+  }
+  header .header-container a {
+    font-size: 28px;
+  }
+  header .header-container h3 {
+    font-size: 22px;
+  }
+  .topic-title {
+    font-size: 32px;
+  }
+  main .fav-container {
+    display: block;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  main .fav-container .fav-card {
+    width: 33%;
+    height: auto;
+  }
+  main .fav-container .fav-card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+  main .fav-container .fav-card .fav-name {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+  }
+  main .sale-container .sale-card {
+    width: 100%;
+    border-radius: 0;
+  }
+  main .sale-container .sale-card::after {
+    height: 90px;
+    width: 90px;
+  }
+  footer .top-footer ul li {
+    word-break: break-all;
+    font-size: 14px;
+  }
+  footer .top-footer ul li h4 {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  footer .bottom-footer {
+    height: 50px;
+    width: 100%;
+    background-color: #191919;
+    color: #7286d3;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  header .header-container h1 {
+    font-size: 28px;
+  }
+  header .header-container a {
+    font-size: 24px;
+  }
+  header .header-container h3 {
+    font-size: 22px;
+  }
+  .topic-title {
+    font-size: 22px;
+  }
+  .fav-name {
+    font-size: 16px;
+  }
+  main .extra-container {
+    width: 90%;
+    font-size: 14px;
+  }
+  main .extra-container li {
+    padding: 32px 0;
+  }
+  footer .top-footer ul li {
+    font-size: 8px;
+  }
+  footer .top-footer ul li h4 {
+    font-size: 12px;
+    text-align: center;
+  }
+  footer .bottom-footer {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,16 @@
+# humanstxt.org/
+# We are people, Not machines
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Shahibul hasan(Raven) -- Front end develper -- http://shahibulhasan.mypressonline.com
+
+# THANKS
+
+
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Normalize.css

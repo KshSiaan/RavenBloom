@@ -1,0 +1,285 @@
+@import "pack";
+
+//CssDebugger
+
+// *{background-color: #ff000030;}
+
+//Pre-fixer
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100vw;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.metabody {
+  overflow-x: hidden;
+}
+main {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+//Pre-classified components
+.absolute {
+  position: absolute;
+}
+
+.space {
+  height: 24px;
+  width: 100%;
+  display: block;
+}
+
+input,
+select {
+  background: none;
+  outline: none;
+  border: solid 3px $dark;
+  border-radius: 5px;
+  font-size: 24px !important;
+  padding: 8px 0;
+  color: $dark;
+
+  transition: transform 0.2s;
+}
+::-webkit-input-placeholder {
+  color: $dark;
+}
+::placeholder {
+  color: $dark;
+}
+
+textarea {
+  @extend input;
+  width: 80%;
+  resize: none;
+}
+
+button {
+  font-size: 18px !important;
+  padding: 18px 24px;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 2px 3px #00000020;
+  }
+}
+.disabled {
+  background-color: #29292940 !important;
+  cursor: no-drop;
+
+  &:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+.space {
+  height: 18px;
+  width: 100%;
+  display: block;
+}
+.space2 {
+  height: 32px;
+  width: 100%;
+  display: block;
+}
+.space3 {
+  height: 64px;
+  width: 100%;
+  display: block;
+}
+.space4 {
+  height: 128px;
+  width: 100%;
+  display: block;
+}
+
+//Styles
+
+body {
+  background-color: $light;
+  min-height: 100vh;
+  width: 100vw;
+  font-family: $font;
+  scroll-behavior: smooth;
+}
+
+//?                                                 Navbar
+nav {
+  width: 100vw;
+  height: 64px;
+  background: $secondary;
+  @include flexer(row, space-around);
+  position: relative;
+  top: 0;
+
+  .nav-child {
+    width: (100% / 3);
+    height: 100%;
+    @include flexer(row, space-around);
+    font-size: 22px;
+
+    a {
+      color: $light;
+      height: 100%;
+      width: 50%;
+      @include flexer(row, center);
+      cursor: pointer;
+    }
+  }
+  .nav-mid {
+    text-align: center;
+    color: $dark;
+    font-family: $logoFont;
+    font-size: 36px;
+    cursor: pointer;
+  }
+  .nav-right {
+    .menu {
+      display: none;
+    }
+  }
+}
+
+//?                                                 Navbar Dropdown
+
+.drop {
+  list-style: none;
+  position: absolute;
+  background-color: $secondary;
+  top: 42px;
+  display: none;
+  padding: 0 20px;
+  z-index: 5;
+
+  li {
+    display: block;
+    padding: 20px 0;
+    font-size: 18px;
+
+    //styling hover
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+.drop-parent:hover .drop {
+  display: block;
+}
+
+//! Mobile ViewScreen
+
+@media screen and (max-width: 854px) {
+  //Pre Classified
+
+  input,
+  select {
+    font-size: 16px !important;
+    padding: 8px 4px;
+  }
+  button {
+    font-size: 16px !important;
+    padding: 16px 20px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0px 2px 3px #00000020;
+    }
+  }
+
+  //?                                                 Navbar
+  nav {
+    width: 100%;
+    height: 64px;
+    background: $secondary;
+    @include flexer(row, space-around);
+    position: relative;
+    top: 0;
+    .nav-child {
+      a {
+        display: none;
+      }
+    }
+    .nav-mid {
+      font-size: 24px;
+    }
+    .nav-right {
+      @include flexer(row, flex-end);
+
+      .menu {
+        height: 64px;
+        width: 64px;
+        @include flexer(row, center);
+        cursor: pointer;
+        color: $dark;
+        font-size: 38px;
+      }
+    }
+  }
+}
+//Sidebar for mobile
+
+.nav-sidebar {
+  height: calc(100vh - 64px);
+  position: absolute;
+  background-color: $secondary;
+  width: 100%;
+  bottom: 0;
+  left: -100%;
+  transition: left 0.2s;
+  z-index: 10;
+
+  a {
+    display: block;
+    padding: 32px 0;
+    text-align: center;
+    color: $light;
+    font-size: 24px;
+    cursor: pointer;
+
+    .sidebar-dropdown {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: $primary;
+      display: none;
+
+      li {
+        display: block;
+        text-align: center;
+        padding: 18px 0;
+        cursor: pointer;
+      }
+    }
+
+    .open {
+      display: block;
+    }
+  }
+}
+
+.open {
+  left: 0;
+}

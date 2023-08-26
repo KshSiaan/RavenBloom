@@ -1,0 +1,35 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Norican&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+
+//? Damn greenish theme ( Not recommended *early theme*)
+// $light:#EDF1D6;
+// $primary:#609966;
+// $secondary:#9DC08B;
+// $dark:#40513B;
+
+//? Light Blue theme
+
+$light: #f6f6f6;
+$primary: #7286d3;
+$secondary: #8ea7e9;
+$dark: #191919;
+
+$logoFont: "Norican", cursive;
+$font: "Libre Baskerville", serif;
+
+//? Mixins
+
+@mixin flexer($flow, $type) {
+  display: flex;
+  flex-flow: $flow wrap;
+  justify-content: $type;
+  align-items: center;
+}
+
+@mixin flexerAlign($flow, $type, $side) {
+  display: flex;
+  flex-flow: $flow wrap;
+  justify-content: $type;
+  align-items: $side;
+}

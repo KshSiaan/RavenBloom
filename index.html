@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>RavenBloom</title>
+		<meta name="description" content="Ravenbloom is your one-stop flower shop for beautiful bouquets, flower boxes, and gardening tools and kits. Whether you're looking for the perfect gift for a loved one or you want to brighten up your own space, we have everything you need to create a stunning floral display. Visit us today to explore our wide selection of flowers and gardening products." />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="author" href="humans.txt" />
+
+		<meta property="og:title" content="Ravenbloom - Your One-Stop Flower Shop" />
+		<meta property="og:description" content="At Ravenbloom, we offer a wide selection of beautiful flowers, including bouquets, flower boxes, and gardening tools and kits. Whether you're looking for the perfect gift for a loved one or you want to brighten up your own space, we have everything you need to create a stunning floral display." />
+		<meta property="og:image" content="https://example.com/path/to/image.jpg" />
+		<meta property="og:url" content="https://ravenbloom.com" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="Ravenbloom" />
+
+		<link rel="stylesheet" href="./style/style.css">
+		<link rel="stylesheet" href="./style/home.css">
+	</head>
+	<body>
+
+		<!--?                                                Navbar                                   -->
+		<nav class="absolute">
+			<div class="nav-child nav-left">
+				<a href="#" class="drop-parent" onclick=" window.location.assign('/flower.html')"> Shop <ul class="drop">
+						<li onclick=" window.location.assign('/flower.html')">Flowers</li>
+						<li onclick=" window.location.assign('/tools.html')">Gardening tools & kits</li>
+					</ul>
+				</a>
+				<a href="#" class="drop-parent"> Policy <ul class="drop">
+						<li onclick=" window.location.assign('/TnC.html')">Terms & conditions</li>
+						<li onclick=" window.location.assign('/privacyPolicy.html')">Privacy policy</li>
+						<li onclick=" window.location.assign('/returnPolicy.html')">Return policy</li>
+						<li onclick=" window.location.assign('/faq.html')">FAQ</li>
+						<li onclick=" window.location.assign('/aboutUs.html')">About us</li>
+						<li onclick=" window.location.assign('/contact.html')">Contact us</li>
+					</ul>
+				</a>
+			</div>
+			<div class="nav-child nav-mid" onclick="window.location.assign('/index.html')"> RavenBloom </div>
+			<div class="nav-child nav-right">
+				<a href="#" onclick=" window.location.assign('/profile.html')"> Profile </a>
+				<a href="#" onclick=" window.location.assign('/cart.html')"> Cart </a>
+				<div class="menu">
+					<i class="bi bi-list"></i>
+				</div>
+			</div>
+		</nav>
+		<!-- Sidebar for mobile screen-->
+		<div class="nav-sidebar">
+			<a onclick="">
+				<span onclick="sidebarDropActivator(this)"> Shop &#9662; </span>
+				<ul class="sidebar-dropdown">
+					<li onclick=" window.location.assign('/flower.html')">Flowers</li>
+					<li onclick=" window.location.assign('/tools.html')">Gardening tools & kits</li>
+				</ul>
+			</a>
+			<a>
+				<span onclick="sidebarDropActivator(this)"> Policy &#9662; </span>
+				<ul class="sidebar-dropdown">
+					<li onclick=" window.location.assign('/TnC.html')">Terms & conditions</li>
+					<li onclick=" window.location.assign('/privacyPolicy.html')">Privacy policy</li>
+					<li onclick=" window.location.assign('/returnPolicy.html')">Return policy</li>
+					<li onclick=" window.location.assign('/faq.html')">FAQ</li>
+					<li onclick=" window.location.assign('/aboutUs.html')">About us</li>
+					<li onclick=" window.location.assign('/contact.html')">Contact us</li>
+				</ul>
+			</a>
+			<a onclick="window.location.assign('/profile.html')"> Profile </a>
+			<a onclick="window.location.assign('/cart.html')"> Cart </a>
+		</div>
+		<!--?                                                   Main content                                   -->
+		<!--                                                       Header                                      -->
+		<header>
+			<div class="header-container">
+				<h1> Fill your one with <br> the sweet fragnance of <br> RavenBloom's flowers </h1>
+				<a href=""> Shop now. </a>
+			</div>
+			<div class="header-container">
+				<!-- Question can be made dynamicly random by js -->
+				<h3 class="question"> Q: Which flower is often associated with royalty and nobility </h3>
+				<span class="space2"></span>
+				<input type="text" name="" id="" placeholder="What's your guess?">
+				<div class="button-container">
+					<button>Confirm</button>
+				</div>
+			</div>
+		</header>
+		<main>
+			<!--* Favourite cards -->
+			<h2 class="topic-title"> Start with your favourite flower </h2>
+			<!-- imagined as card -->
+			<div class="fav-container">
+				<!-- Javascript will keep the cards here dynamically -->
+			</div>
+			<!--* Sale cards -->
+			<h2 class="topic-title"> More flowers, more joy: <br> Get extra blooms during our sales event </h2>
+			<div class="sale-container">
+				<!-- Javascript will keep the cards here dynamically -->
+			</div>
+			<!-- Extras -->
+			<h2 class="topic-title"> Flourishing Selections: See our new and expanded options </h2>
+			<ul class="extra-container">
+				<!-- Javascript will add list here dynamically -->
+			</ul>
+			<span class="space4"></span>
+		</main>
+		<!-- Footer -->
+		<footer>
+			<div class="top-footer">
+				<ul>
+					<li>
+						<h4>RAVENBLOOM FLOWER SHOP</h4>
+					</li>
+					<li>Address: 123 Main St, Anytown, USA 00000</li>
+					<li>Phone Number: +1 (555) 123-4567 | Fax: +1 (555)</li>
+					<li>Email: info@ravenbloomflowers.com</li>
+					<li>Website: www.ravenbloomflowers.com</li>
+				</ul>
+				<ul>
+					<li>
+						<h4>FOLLOW US ON SOCIAL MEDIA</h4>
+					</li>
+					<li>Facebook</li>
+					<li>Instagram</li>
+					<li>Pintrest</li>
+					<li>Youtube</li>
+				</ul>
+				<ul>
+					<li>
+						<h4>FOLLOW US ON SOCIAL MEDIA</h4>
+					</li>
+					<li>Mon-Sat 9AM-7PM | Sun 10AM-5PM</li>
+					<li>Anytown, Anyplace, Anywhere</li>
+					<li>since 2005!</li>
+				</ul>
+			</div>
+			<div class="bottom-footer">© 2023 Ravenbloom Flower Shop. All rights reserved.</div>
+		</footer>
+		<!-- ?                                                    Scripts                                        -->
+		<script src="js/main.js"></script>
+		<script src="js/home.js"></script>
+		<script src="js/user.js" type="module"></script>
+	</body>
+</html>

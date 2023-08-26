@@ -1,0 +1,121 @@
+@import "pack";
+
+//Pre-classified components
+
+//code
+body {
+  background: url("/assets/registerBg.jpg");
+  background-size: cover;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+.regi-body {
+  height: 100vh;
+  width: 60%;
+  margin: 0 auto;
+  margin-left: 360px;
+
+  .regi-container {
+    padding-top: 4%;
+  }
+}
+
+form {
+  color: $dark;
+
+  h2 {
+    font-weight: normal;
+    text-align: center;
+    font-size: 34px;
+    padding-top: 48px;
+  }
+
+  .input-container {
+    width: 100%;
+    @include flexer(row, space-between);
+
+    //?                                     Global side
+
+    .inp {
+      height: 100%;
+      width: 45%;
+      @include flexerAlign(column, space-around, flex-start);
+
+      label {
+        font-size: 18px;
+      }
+      input {
+        display: block;
+        padding-left: 2%;
+        width: 100%;
+      }
+
+      & > * {
+        margin-top: 24px;
+      }
+    }
+  }
+
+  .button-container {
+    // background-color: $dark;
+    @include flexerAlign(column, space-around, flex-end);
+    padding-top: 50px;
+    width: 100%;
+    padding-left: 12px;
+
+    button {
+      background-color: $primary;
+      color: $light;
+      padding: 18px 74px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .regi-body {
+    height: auto;
+    width: 100vw;
+    margin: 0 auto;
+    margin-left: 0;
+
+    .regi-container {
+      padding-top: 0;
+    }
+  }
+
+  form {
+    h2 {
+      padding-top: 24px;
+    }
+
+    .input-container {
+      @include flexer(column, space-between);
+
+      //?                                     Global side
+
+      .inp {
+        width: 60%;
+        @include flexerAlign(column, space-around, flex-start);
+
+        &:last-of-type {
+          margin-top: 64px;
+        }
+        input {
+          display: block;
+          padding-left: 2%;
+          width: 100%;
+        }
+      }
+    }
+
+    .button-container {
+      @include flexer(column, center);
+      padding-top: 50px;
+      margin: 48px auto;
+
+      button {
+        padding: 18px 48px;
+      }
+    }
+  }
+}

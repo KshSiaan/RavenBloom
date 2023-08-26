@@ -1,0 +1,185 @@
+@import "pack";
+
+//Pre-fixer
+
+//Pre-classified components
+
+//Styles
+main {
+  width: 80vw;
+  height: auto;
+  margin: 0 auto;
+
+  .checkout-form {
+    display: block;
+    position: relative;
+    margin: 34px auto;
+    height: 80vh;
+    width: 100%;
+    border-radius: 15px;
+    background: #f6f6f6;
+    box-shadow: 6px 6px 12px #d1d1d1, -6px -6px 12px #ffffff;
+    color: $dark;
+    overflow: hidden;
+
+    @include flexer(row, space-between);
+
+    .recheck {
+      width: 18%;
+      height: 100%;
+      overflow-y: auto;
+      font-size: 18px;
+      border-right: dashed 2px $primary;
+
+      p {
+        display: block;
+
+        padding: 8px 18px;
+      }
+    }
+
+    .payment {
+      width: 80%;
+      height: 100%;
+
+      h2 {
+        height: 20%;
+        margin: 0;
+        padding: 0 48px;
+        font-size: 32px;
+        font-weight: normal;
+        color: $primary;
+
+        @include flexer(row,flex-start)
+      }
+
+      form {
+        height: 80%;
+        width: 100%;
+
+        .payment-subs {
+          height: 80%;
+          width: 90%;
+          @include flexerAlign(row, space-around, flex-start);
+
+          div {
+            width: 50%;
+            @include flexerAlign(column, space-around, flex-start);
+
+            input {
+              color: $dark;
+              font-size: 18px;
+              display: block;
+              margin: 0 24px;
+            }
+            label {
+              @extend input;
+              font-weight: bold;
+            }
+          }
+
+          .payment-sub-A {
+            height: 100%;
+          }
+          .payment-sub-B {
+            height: 24%;
+
+            select {
+              width: 300px;
+              text-align: center;
+            }
+          }
+        }
+
+        .interacter {
+          height: 20%;
+          width: 90%;
+          margin: 0 auto;
+          @include flexer(row, flex-end);
+
+          button {
+            background-color: $primary;
+            color: $light;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    width: 100vw;
+
+    .checkout-form {
+      height: 100vh;
+      width: 80%;
+      @include flexer(row, space-between);
+      overflow: hidden;
+
+      &::after {
+        display: none;
+      }
+
+      .recheck {
+        width: 18%;
+        display: none;
+      }
+
+      .payment {
+        width: 80%;
+        margin: 0 auto;
+
+        h2 {
+          padding: 5px 32px;
+          font-size: 28px;
+          width: 100%;
+          text-align: center;
+        }
+
+        form {
+          .payment-subs {
+            height: 70%;
+            width: 100%;
+            @include flexerAlign(column, space-around, center);
+
+            div {
+              width: 100%;
+              @include flexerAlign(column, space-around, flex-start);
+
+              input {
+                color: $dark;
+                font-size: 14px;
+                display: block;
+                margin: 0 auto;
+                width: 90%;
+              }
+              label {
+                @extend input;
+                font-weight: bold;
+              }
+            }
+
+            .payment-sub-A {
+              height: 60%;
+            }
+            .payment-sub-B {
+              height: 40%;
+
+              select {
+                width: 90%;
+                text-align: center;
+                margin: 0 auto;
+              }
+            }
+          }
+
+          .interacter {
+            height: 20%;
+            @include flexer(row, center);
+          }
+        }
+      }
+    }
+  }
+}

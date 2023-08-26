@@ -1,0 +1,60 @@
+@import "pack";
+
+//Pre-fixer
+
+//Pre-classified components
+
+//Styles
+body {
+  background-image: url("/assets/profileBg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main {
+  height: 90vh;
+  width: 100vw;
+  @include flexer(column, center);
+
+  .metabody {
+    height: 90%;
+    width: 80%;
+    border-radius: 20px;
+    color: $dark;
+
+    // From https://css.glass
+    background: rgba(237, 241, 214, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.4px);
+    -webkit-backdrop-filter: blur(2.4px);
+    border: 1px solid rgba(237, 241, 214, 0.3);
+
+    &::after {
+      content: "RavenBloom";
+      font-family: $logoFont;
+      color: $primary;
+      position: absolute;
+      padding: 6px 18px;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+.metabody {
+  @include flexerAlign(column, space-around, flex-start);
+
+  .header {
+    font-size: 32px;
+    font-weight: normal;
+    margin: 0;
+    padding-left: 32px;
+  }
+
+  .info {
+    font-size: 22px;
+    margin: 0;
+    margin-left: 32px;
+  }
+}
