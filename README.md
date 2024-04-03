@@ -1,7 +1,7 @@
 
 # RavenBloom 1.0
 
-This is a full functional front end custom free handed designed flowershop website.
+This is a functional front end custom free handed designed flowershop website.
 
 ## Features
 
